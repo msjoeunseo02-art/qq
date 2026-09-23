@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="고래잇 X 이마트 보물찾기 프로젝트 — 5조 작업물 포트폴리오 쇼케이스. 홍보 기획서, 카드뉴스, 포스터, 동영상, 부산 상권 지도를 한 페이지에서 확인하세요.">
+  <title>고래잇 × 이마트 보물찾기 | 5조 포트폴리오</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Leaflet CSS (Map) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================================================
+     NAVIGATION
+     =================================================== -->
+<nav id="navbar" role="navigation" aria-label="메인 네비게이션">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="nav-logo-icon">🐳</div>
+      <span>고래잇 <span>×</span> 이마트</span>
+    </div>
+
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li role="none"><a href="#hero"   role="menuitem" id="nav-home">홈</a></li>
+      <li role="none"><a href="#plan"   role="menuitem" id="nav-plan">홍보 기획서</a></li>
+      <li role="none"><a href="#brief"  role="menuitem" id="nav-brief">콘텐츠 브리프</a></li>
+      <li role="none"><a href="#poster" role="menuitem" id="nav-poster">포스터</a></li>
+      <li role="none"><a href="#cardnews" role="menuitem" id="nav-cardnews">카드뉴스</a></li>
+      <li role="none"><a href="#video"  role="menuitem" id="nav-video">동영상</a></li>
+      <li role="none"><a href="#map"    role="menuitem" id="nav-map">상권 지도</a></li>
+    </ul>
+
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===================================================
+     HERO
+     =================================================== -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      신세계그룹 2기 · 4일차 5조 프로젝트
+    </div>
+
+    <h1 class="hero-title" id="hero-heading">
+      <span class="gold">고래잇</span> <span class="red">×</span> 이마트<br>
+      보물찾기 프로젝트
+    </h1>
+
+    <p class="hero-sub">
+      부산 상권 내 이마트 지점을 중심으로 기획된 고래잇 X 이마트 보물찾기 프로모션 프로젝트의 모든 결과물을 한 페이지에서 만나보세요.
+    </p>
+
+    <button class="hero-cta" id="hero-cta" aria-label="작업물 보기로 스크롤">
+      <i class="fa-solid fa-arrow-down hero-cta-arrow"></i>
+      작업물 보기
+    </button>
+
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">6장</div>
+        <div class="hero-stat-lbl">카드뉴스</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">2종</div>
+        <div class="hero-stat-lbl">기획서 · 브리프</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">7곳</div>
+        <div class="hero-stat-lbl">부산 이마트 지점</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================================================
+     홍보 기획서
+     =================================================== -->
+<section id="plan" class="section" aria-labelledby="plan-heading">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">
+        <i class="fa-solid fa-file-lines"></i> Document
+      </div>
+      <h2 class="section-title" id="plan-heading">홍보 <span>실행 기획서</span></h2>
+      <p class="section-desc">고래잇 X 이마트 보물찾기 프로젝트의 홍보 전략과 실행 계획을 담은 기획서입니다.</p>
+    </div>
+
+    <div class="pdf-section-inner" style="margin-top:40px;">
+      <div class="reveal reveal-delay-1">
+        <p style="font-size:0.88rem; color:var(--clr-text-muted); line-height:1.8; margin-bottom:16px;">
+          이마트 보물찾기 이벤트의 타깃 분석, 채널 전략, 콘텐츠 기획 및 실행 일정을 체계적으로 정리한 홍보 실행 기획서입니다. 프로모션의 방향성과 세부 액션 플랜을 확인하세요.
+        </p>
+        <a id="btn-plan-open"
+           href="고래잇_x_이마트_보물찾기_홍보실행기획서_표제목색상수정본.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-open">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          새 탭에서 열기
+        </a>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="pdf-viewer">
+          <iframe
+            id="iframe-plan"
+            src="고래잇_x_이마트_보물찾기_홍보실행기획서_표제목색상수정본.pdf"
+            title="홍보 실행 기획서 PDF"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================================================
+     콘텐츠 브리프
+     =================================================== -->
+<section id="brief" class="section" aria-labelledby="brief-heading">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">
+        <i class="fa-solid fa-clipboard-list"></i> Brief
+      </div>
+      <h2 class="section-title" id="brief-heading">콘텐츠 <span>브리프</span></h2>
+      <p class="section-desc">각 채널과 콘텐츠 유형별 제작 방향, 메시지 핵심 및 가이드라인을 담은 브리프 문서입니다.</p>
+    </div>
+
+    <div class="pdf-section-inner" style="margin-top:40px;">
+      <div class="reveal reveal-delay-1">
+        <p style="font-size:0.88rem; color:var(--clr-text-muted); line-height:1.8; margin-bottom:16px;">
+          SNS, 옥외광고, 인플루언서 마케팅 등 채널별 콘텐츠 전략과 크리에이티브 방향성을 구체적으로 정리한 콘텐츠 브리프입니다.
+        </p>
+        <a id="btn-brief-open"
+           href="고래잇_x_이마트_보물찾기_홍보실행기획서_표제목색상수정본.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-open">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          새 탭에서 열기
+        </a>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="pdf-viewer">
+          <iframe
+            id="iframe-brief"
+            src="고래잇_x_이마트_보물찾기_홍보실행기획서_표제목색상수정본.pdf"
+            title="콘텐츠 브리프 PDF"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================================================
+     포스터
+     =================================================== -->
+<section id="poster" class="section" aria-labelledby="poster-heading">
+  <div class="container" style="text-align:center;">
+    <div class="reveal">
+      <div class="section-label" style="justify-content:center;">
+        <i class="fa-solid fa-image"></i> Poster
+      </div>
+      <h2 class="section-title" id="poster-heading">프로젝트 <span>포스터</span></h2>
+      <p class="section-desc" style="margin:0 auto;">이벤트 홍보를 위해 제작된 메인 포스터입니다. 클릭하면 원본 크기로 확인할 수 있습니다.</p>
+    </div>
+
+    <div class="reveal reveal-delay-1" style="margin-top:40px;">
+      <div class="poster-wrap" id="poster-wrap" role="button" aria-label="포스터 원본 보기" tabindex="0">
+        <img id="poster-img" src="카드뉴스1.png" alt="고래잇 X 이마트 보물찾기 포스터">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================================================
+     카드뉴스
+     =================================================== -->
+<section id="cardnews" class="section" aria-labelledby="cardnews-heading">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">
+        <i class="fa-solid fa-layer-group"></i> Card News
+      </div>
+      <h2 class="section-title" id="cardnews-heading">카드 <span>뉴스</span></h2>
+      <p class="section-desc" style="margin:0 auto;">이마트 보물찾기 프로젝트를 소개하는 6장의 카드뉴스입니다. 좌우 버튼 또는 점 버튼으로 탐색하세요.</p>
+    </div>
+
+    <div class="reveal reveal-delay-1" style="margin-top:40px;">
+      <div class="carousel-container" role="region" aria-label="카드뉴스 슬라이더">
+        <div class="carousel-track-wrap">
+          <div class="carousel-track" id="carousel-track" aria-live="polite"></div>
+        </div>
+
+        <button class="carousel-btn prev" id="carousel-prev"
+                onclick="carouselPrev()" aria-label="이전 슬라이드">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" id="carousel-next"
+                onclick="carouselNext()" aria-label="다음 슬라이드">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots" id="carousel-dots" role="tablist"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================================================
+     동영상
+     =================================================== -->
+<section id="video" class="section" aria-labelledby="video-heading">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">
+        <i class="fa-solid fa-film"></i> Video
+      </div>
+      <h2 class="section-title" id="video-heading">프로젝트 <span>동영상</span></h2>
+      <p class="section-desc" style="margin:0 auto;">5조가 제작한 홍보 영상입니다. 브라우저에서 바로 재생하세요.</p>
+    </div>
+
+    <div class="reveal reveal-delay-1" style="margin-top:40px;">
+      <div class="video-wrap">
+        <video
+          id="main-video"
+          controls
+          preload="metadata"
+          poster="카드뉴스1.png"
+          aria-label="고래잇 X 이마트 보물찾기 홍보 영상"
+        >
+          <source src="5조.mp4" type="video/mp4">
+          브라우저가 동영상 재생을 지원하지 않습니다.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================================================
+     부산 이마트 상권 지도
+     =================================================== -->
+<section id="map" class="section" aria-labelledby="map-heading">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">
+        <i class="fa-solid fa-map-location-dot"></i> 상권 지도
+      </div>
+      <h2 class="section-title" id="map-heading">부산 이마트 <span>상권 지도</span></h2>
+      <p class="section-desc">부산광역시 내 이마트 지점 현황을 지도로 확인하세요. 마커를 클릭하거나 목록에서 지점을 선택하면 상세 정보를 볼 수 있습니다.</p>
+    </div>
+
+    <div class="map-layout reveal reveal-delay-1" style="margin-top:40px;">
+      <!-- Sidebar -->
+      <div class="map-sidebar">
+        <div class="map-sidebar-header">
+          <div class="map-sidebar-title">
+            <i class="fa-solid fa-store" style="color:var(--clr-red);"></i>
+            부산 이마트 지점
+          </div>
+          <div class="map-sidebar-sub">총 7개 지점 · 마커 클릭으로 상세 확인</div>
+        </div>
+        <div class="branch-list" id="branch-list" role="list">
+          <!-- JS로 렌더링 -->
+        </div>
+
+        <!-- 범례 -->
+        <div style="padding:12px 20px 16px; border-top:1px solid var(--clr-border); display:flex; gap:16px; flex-wrap:wrap;">
+          <div style="display:flex;align-items:center;gap:6px;font-size:0.72rem;color:var(--clr-text-muted);">
+            <span style="width:10px;height:10px;border-radius:50%;background:var(--clr-red);display:block;"></span>
+            프리미엄 / 플래그십
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:0.72rem;color:var(--clr-text-muted);">
+            <span style="width:10px;height:10px;border-radius:50%;background:var(--clr-gold);display:block;"></span>
+            일반점
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-container-wrap">
+        <div id="emart-map" role="img" aria-label="부산 이마트 지점 지도"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FOOTER
+     =================================================== -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-logo">
+      <div class="footer-logo-icon">🐳</div>
+      고래잇 × 이마트 보물찾기 프로젝트
+    </div>
+    <p class="footer-desc">신세계그룹 2기 인턴십 · 4일차 · 5조</p>
+    <p class="footer-meta">제작: 홍보기획서 · 카드뉴스 · 포스터 · 영상 · 상권지도 포함 전체 작업물 쇼케이스</p>
+  </div>
+</footer>
+
+<!-- ===================================================
+     LIGHTBOX
+     =================================================== -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="이미지 확대보기">
+  <button class="lb-close" onclick="closeLightbox()" aria-label="닫기">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <img id="lb-img" src="" alt="확대 이미지">
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Main JS -->
+<script src="main.js"></script>
+
+</body>
+</html>
